@@ -1,0 +1,122 @@
+:root{
+    --main-text-color: #bebebe;
+    --main-background-color: #3b3b3b78;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+.container__body{
+    display: grid;
+    grid-template-areas: 
+    "aside__nav main"
+    "footer footer";
+    padding: 0.5em 0.5em;
+    gap: 0.5em;
+    grid-template-columns: 20vw 78vw;
+    grid-template-rows: 85vh 12vh;
+}
+.aside__nav{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    grid-area: aside__nav;
+    display: grid;
+    grid-template-rows: 22% 76%;
+    grid-template-areas:
+    "a__header"
+    "a__main";
+    gap: 1em;
+}
+#logo-spotify{
+    width: 7em;
+}
+.a__header, .a__main,.playlist__n__podcast,.blck, .languages__n__cookies, .footer{
+    display: flex;
+    flex-direction: column;
+}
+.a__header, .a__main{
+    justify-content: space-around;
+    padding: 1em;
+    background-color: var(--main-background-color);
+    border-radius: 8px;
+}
+.a__header{
+    grid-area: a__header;
+}
+.text-btn{
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 0.5em;
+}
+.text-btn:hover{
+    color: #fff;
+}
+.a__main{
+    grid-area: a__main;
+    justify-content: unset;
+}
+.lib__n__plus{
+    display: flex;
+    justify-content: space-between;
+    line-height: 3vh;
+    height: 3vh;
+}
+.playlist__n__podcast{
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.blck{
+    font-weight: 400;
+    justify-content: space-between;
+    color: #fff;
+    background-color: var(--main-background-color);
+    border-radius: 8px;
+    padding: 1em;
+    height: 14vh;
+}
+.rounded__btn{
+    background-color: #fff;
+    padding: 0.5em 0.5em;
+    border-radius: 50px;
+    transition: 0.2s;
+    width: max-content;
+}
+.rounded__btn > a{
+    color: #000000;
+    text-decoration: none;
+}
+.rounded__btn:hover{
+    transform: scale(1.1,1.1);
+}
+.languages__n__cookies{
+    height: 25vh;
+    justify-content: space-between;
+}
+.lang{
+    background-color: #000000;
+    border: #fff solid 3.5px;
+}
+.lang > a{
+    color: #fff;
+}
+.main{
+    grid-area: main;
+    background-color: #bebebe;
+    border-radius: 8px;
+}
+.footer{
+    grid-area: footer;
+    font-family: "DM sans" sans-serif;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(to left, #145fff 30%, #fd56aaeb 70%);
+}
