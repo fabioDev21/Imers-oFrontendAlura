@@ -1,0 +1,24 @@
+.footer{
+    grid-area: footer;
+    cursor: default;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(to left, #145fff 30%, #fd56aaeb 70%);
+}
+.footer__desc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 900px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.premium{
+    line-height: 30px;
+    align-self: center;
+}

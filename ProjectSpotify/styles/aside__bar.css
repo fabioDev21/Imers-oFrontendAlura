@@ -1,0 +1,83 @@
+.aside__nav{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    grid-area: aside__nav;
+    display: grid;
+    grid-template-areas:
+    "a__header"
+    "a__main";
+    gap: 0.5em;
+}
+#logo-spotify{
+    opacity: 80%;
+    width: 7em;
+    transition: 0.3s;
+}
+#logo-spotify:hover{
+    opacity: 100%;
+}
+.a__header,
+.a__main,
+.playlist__n__podcast,
+.blck,
+.languages__n__cookies,
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.a__header,
+.a__main{
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: var(--main-background-color);
+}
+.a__header{
+    grid-area: a__header;
+}
+.a__main{
+    grid-area: a__main;
+    justify-content: unset;
+}
+.lib__n__plus{
+    display: flex;
+    justify-content: space-between;
+    line-height: 3vh;
+    height: 3vh;
+}
+.playlist__n__podcast{
+    justify-content: space-evenly;
+    height: 40vh;
+}
+.plus{
+    background-color: transparent;
+    border-radius: 50%;
+}
+.plus:hover{
+    background: var(--gradient-background-blck);
+}
+.blck{
+    cursor: default;
+    font-weight: 400;
+    justify-content: space-between;
+    color: #fff;
+    background:  var(--gradient-background-blck);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    padding: 1em;
+    width: 100%;
+    height: 60%;
+    transition: 0.6s;
+}
+.languages__n__cookies{
+    height: 25vh;
+    justify-content: space-between;
+}
+.lang{
+    background-color: #000000;
+    border: #fff solid 3.5px;
+}
+.lang > a{
+    color: #fff;
+}

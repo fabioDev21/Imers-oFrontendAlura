@@ -3,67 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/aside__bar.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <title> Imersão Spotify </title>
 </head>
 <body>
     <div class="container__body">
-        <nav class="aside__nav">
-            <picture class="aside__nav--logo">
+        <div class="aside__nav">
+            <nav class="a__header">
+                <span>
+                    <a href="">
+                        <img id="logo-spotify" src="../assets/icons/logo-spotify.png" alt="logo-spotify.png">
+                    </a>
+                </span>
+                <span>
+                    <a href="" class="text-btn">
+                        <span class="fa fa-home fa-lg"></span>
+                        <span> Início </span>
+                    </a>
+                </span>
+                <span>
+                    <a href="" class="text-btn">
+                        <span class="fa fa-search fa-lg"></span>
+                        <span> Buscar </span>
+                    </a>
+                </span>
+            </nav>
+            <section class="a__main">
+                <div class="lib__n__plus">
+                    <span>
+                        <a href="" class="text-btn">
+                            <span class="fa fa-book fa-lg"></span>
+                            <span> Sua Biblioteca</span>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="" class="text-btn plus">
+                            <span class="fa fa-plus fa-lg"></span>
+                        </a>
+                    </span>
+                </div>
+                <div class="playlist__n__podcast">
+                    <span class="blck">
+                        <span>Crie sua primeira playlist</span>
+                        <span>É fácil, vamos te ajudar.</span>
+                        <span class="rounded__btn">
+                            <a href="" >
+                                <span > Criar playlist </span>
+                            </a>
+                        </span>
+                    </span>
+                    <span class="blck">
+                        <span>Que tal seguir um podcast novo?</span>
+                        <span>Avisaremos você sobre novos episódios.</span>
+                        <span class="rounded__btn">
+                            <a href="" >
+                                <span > Explore podcasts </span>
+                            </a>
+                        </span>
+                    </span>
+                </div>
+                <div class="languages__n__cookies">
+                    <span>
+                        <a href="" class="text-btn coookies">
+                            <span>Cookies</span>
+                        </a>
+                    </span>
+                    <span class="rounded__btn lang">
+                        <a href="">
+                            <span class="fa fa-globe"></span>
+                            <span> Português do Brasil</span>
+                        </a>
+                    </span>
+                </div>
+            </section>
+        </div>
+        <main class="main">
+            <div class="main__nav">
+                <span class="arrows">
+                    <a href="" class="rounded__btn arrow">
+                        <img src="assets/icons/small-left.png" alt="arrow-left" title="Voltar">
+                    </a>
+                    <a href="" class="rounded__btn arrow">
+                        <img src="./assets/icons/small-right.png" alt="arrow-right" title="Avançar">
+                    </a>
+                </span>
+                <form action="" class="main__nav-form">
+                    <a href="">
+                        <img src="./assets/icons/search.png" alt="logo-src" title="Buscar...">
+                    </a>
+                    <input type="text" name="srcInput" id="srcInput" placeholder="O que você ouvir hoje?">
+                </form>
+                <span class="main__nav-btns">
+                    <a href="" class="text-btn">
+                        <span> Inscreva-se </span>
+                    </a>
+                    <span class="rounded__btn m_n-btn">
+                        <a href="">
+                            <span> Entrar </span>
+                        </a>
+                    </span>
+                </span>
+            </div>
+            <div class="main__content">
+                <h3>Navegar por todas as seções</h3>
+                <span class="main__content-items">
+                    <div class="genre__music">
+                        <a href="">
+                            <h5 class="genre__music-title"> Boas festas!</h5>
+                            <picture class="genre__music-logo">
+                                <img src="./assets/playlist/1.jpeg" alt="christmas-logo">
+                            </picture>
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </main>
+        <footer class="footer">
+            <span class="footer__desc">
+                <h5>Testar o Premium de graça</h5>
+                <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+            </span>
+            <span class="rounded__btn premium">
                 <a href="">
-                    <img src="assets/icons/logo-spotify.png" alt="logo-spotify.png">
+                    <span>Inscreva-se grátis</span>
                 </a>
-            </picture>
-            <div class="aside__nav--btns">
-                <a href="" class="link__button">
-                    <span class="fa fa-home fa-lg"></span>
-                    <span> Início </span>
-                </a>
-                <a href="" class="link__button">
-                    <span class="fa fa-search fa-lg"></span>
-                    <span> Buscar </span>
-                </a>
-            </div>
-        </nav>
-        <section class="aside__nav aside__header">
-            <picture class="line__lib">
-                <a href="" class="link__button">
-                    <span class="fa fa-book fa-lg"></span>
-                    <span> Sua Biblioteca </span>
-                </a>
-                <a href="" class="link__button-plus">
-                    <span class="fa fa-plus fa-lg"></span>
-                </a>
-            </picture>
-            <div class="aside__main">
-                <div class="aside__main-item">
-                    <span>Crie sua primeira playlist</span>
-                    <span>É fácil, vamos te ajudar.</span>
-                    <a href="" class="rounded__btn">
-                        <span>Criar playlist</span>
-                    </a>
-                </div>
-                <div class="aside__main-item">
-                    <span>Que tal seguir um podcast novo?</span>
-                    <span>Avisaremos você sobre novos episódios.</span>
-                    <a href="" class="rounded__btn">
-                        <span>Explore podcasts</span>
-                    </a>
-                </div>
-            </div>
-            <div class="aside__footer">
-                <div class="rounded__btn-languages">
-                    <span class="fa fa-globe"></span>
-                    <span>Português do Brasil</span>
-                </div>
-                <a href="" class="link__button-cookies">
-                    <span>Cookies</span>
-                </a>
-            </div>
-        </section>
+            </span>
+        </footer>
     </div>
 </body>
 </html>
