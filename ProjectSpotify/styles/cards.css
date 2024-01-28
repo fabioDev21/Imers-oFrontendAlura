@@ -1,0 +1,80 @@
+.genre__music{
+    position: relative;
+    width: 15%;
+    height: 290px;
+    border-radius: 8px;
+    padding: 1em;
+    overflow: hidden;
+    cursor: pointer;
+}
+.genre__music > a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.genre__music > a > picture{
+    position: absolute;
+    width: 300px;
+    left: 45px;
+    bottom: -30px;
+    transition: 0.6s;
+}
+.genre__music > a > picture:hover{
+    bottom: 20px;
+}
+.genre__music > a > h5{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.genre__music > a > picture > img{
+    width: 70%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+#christmas{
+    background-color: #346a50;
+}
+#pop-mix{
+    background-color: #603d75;
+}
+#novidades{
+    background-color: #2a3e64;
+}
+#creators{
+    background-color: #431919;
+}
+#treino{
+    background-color: #d615a0;
+}
+#podcasts{
+    background-color: #6082c0;
+}
+#sertanejo{
+    background-color: #9161ad;
+}
+#pagodeira{
+    background-color: #3aaf36;
+}
+#funk{
+    background-color: #1f3151;
+}
+#mpb{
+    background-color: #a71818;
+}
+#rock{
+    background-color: #e08916;
+}
+#rap{
+    background-color: #ea73e8;
+}
+#indie{
+    background-color: #5799b4;
+}
+#chill{
+    background-color: #2dc35f;
+}
+#latinas{
+    background-color: #53391d;
+}
