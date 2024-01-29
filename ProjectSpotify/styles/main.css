@@ -22,6 +22,9 @@
     overflow: auto;
     -ms-overflow-style: none;
 }
+.hidden{
+    display: none;
+}
 .main__content-items::-webkit-scrollbar{
     display: none;
 }

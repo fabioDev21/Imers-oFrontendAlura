@@ -1,0 +1,25 @@
+.search__artist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+}
+.search__artist > .search__artist--item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 250px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: var(--main-background-color);
+}
+.search__artist > .search__artist--item > picture{
+    margin-bottom: 2em;
+}
+#search__artist--img{
+    width: 186px;
+    height: 186px;
+    border-radius: 100px;
+}
