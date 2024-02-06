@@ -7,18 +7,22 @@
 }
 .search__artist > .search__artist--item{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
     min-width: 250px;
     height: 300px;
     border-radius: 8px;
     background-color: var(--main-background-color);
+    transition: 0.6s;
+}
+.search__artist--item:hover{
+    background-color: #7b7b7b78
 }
 .search__artist > .search__artist--item > picture{
     margin-bottom: 2em;
 }
-#search__artist--img{
+.search__artist > .search__artist--item > picture > img{
     width: 186px;
     height: 186px;
     border-radius: 100px;

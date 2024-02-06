@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/medias.css">
+    <link rel="stylesheet" href="styles/mob/style__mob.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/search.css">
@@ -12,10 +14,26 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title> Imersão Spotify </title>
 </head>
 <body>
-    <div class="container__body">
+    <div class="container__body-mob">
+        <nav class="top__header">
+            <span>
+                <a href="">
+                    <img id="logo-spotify" src="../assets/icons/logo-spotify.png" alt="logo-spotify.png">
+                </a>
+            </span>
+            <span>
+                <a href="" class="text-btn">
+                    <span class="fa fa-menu fa-lg"></span>
+                    <span> Menu </span>
+                </a>
+            </span>
+        </nav>
+    </div>
+    <div class="container__body-web">
         <div class="aside__nav">
             <nav class="a__header">
                 <span>
@@ -97,7 +115,7 @@
                 </span>
                 <form action="" class="main__nav-form">
                     <a href="">
-                        <img src="./assets/icons/search.png" alt="logo-src" title="Buscar...">
+                        <img src="./assets/icons/search.png"  alt="logo-src" title="Buscar...">
                     </a>
                     <input type="text" name="srcInput" id="srcInput" placeholder="O que você ouvir hoje?">
                 </form>
@@ -113,36 +131,27 @@
                 </span>
             </div>
             <div class="search__artist hidden" id="srcArtist">
-                <a href="" class="text-btn search__artist--item">
-                    <picture>
-                        <img src="" alt="artist-logo" id="search__artist--img">
-                    </picture>
-                    <span id="search__artist--name"></span>
-                    <span> Artista </span>
-                </a>
-                <a href="" class="text-btn search__artist--item">
-                    <picture>
-                        <img src="" alt="artist-logo" id="search__artist--img">
-                    </picture>
-                    <span id="search__artist--name"></span>
-                    <span> Artista </span>
-                </a>
             </div>
-            <div class="main__content">
+            <div class="main__content" id="playlists-items">
                 <h3 class="main__content-title">Navegar por todas as seções</h3>
-                <span class="main__content-items" id="playlists-items">
-                    <div class="genre__music" id="christmas">
+                <span class="main__content-items " >
+                    <div class="genre__music item-card" id="christmas">
                         <a href="">
                             <h5 class="genre__music-title"> Boas festas </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/1.jpeg" alt="christmas-logo">
                             </picture>
                         </a>
+<!--TODO: Pesquisar mais sobre introduzir elementos dentro dos elementos! <div>
+                            <a href="" class="hidden text-btn play" id="play-btn">
+                                <span class="fa fa-play fa-lg" id=" play"></span>
+                            </a>
+                        </div> -->
                     </div>
                     <div class="genre__music" id="pop-mix">
                         <a href="">
                             <h5 class="genre__music-title"> Feitos para você </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/2.png" alt="popmix-logo">
                             </picture>
                         </a>
@@ -150,7 +159,7 @@
                     <div class="genre__music" id="novidades"> 
                         <a href="">
                             <h5 class="genre__music-title"> Novidades </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/3.jpeg" alt="novidades-logo">
                             </picture>
                         </a>
@@ -158,7 +167,7 @@
                     <div class="genre__music" id="creators">
                         <a href="">
                             <h5 class="genre__music-title"> Creators </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/4.jpeg" alt="creators-logo">
                             </picture>
                         </a>
@@ -166,7 +175,7 @@
                     <div class="genre__music" id="treino">
                         <a href="">
                             <h5 class="genre__music-title"> Para treinar </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/5.jpeg" alt="treino-logo">
                             </picture>
                         </a>
@@ -174,7 +183,7 @@
                     <div class="genre__music" id="podcasts">
                         <a href="test.html">
                             <h5 class="genre__music-title"> Podcasts </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/6.jpeg" alt="podcast-logo">
                             </picture>
                         </a>
@@ -182,7 +191,7 @@
                     <div class="genre__music" id="sertanejo">
                         <a href="">
                             <h5 class="genre__music-title"> Sertanejo </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/7.jpeg" alt="sertanejo-logo">
                             </picture>
                         </a>
@@ -190,7 +199,7 @@
                     <div class="genre__music" id="pagodeira">
                         <a href="">
                             <h5 class="genre__music-title"> Pagodeira </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/8.jpeg" alt="pagode-logo">
                             </picture>
                         </a>
@@ -198,7 +207,7 @@
                     <div class="genre__music" id="funk">
                         <a href="">
                             <h5 class="genre__music-title"> Funk </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/9.jpeg" alt="funk-logo">
                             </picture>
                         </a>
@@ -206,7 +215,7 @@
                     <div class="genre__music" id="mpb">
                         <a href="">
                             <h5 class="genre__music-title" > MPB </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/10.jpeg" alt="mpb-logo">
                             </picture>
                         </a>
@@ -214,7 +223,7 @@
                     <div class="genre__music" id="rock">
                         <a href="">
                             <h5 class="genre__music-title"> Rock </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/11.jpeg" alt="rock-logo">
                             </picture>
                         </a>
@@ -222,7 +231,7 @@
                     <div class="genre__music" id="rap">
                         <a href="">
                             <h5 class="genre__music-title"> Rap </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/12.jpeg" alt="rap-logo">
                             </picture>
                         </a>
@@ -230,7 +239,7 @@
                     <div class="genre__music" id="indie">
                         <a href="">
                             <h5 class="genre__music-title"> Indie </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/13.jpeg" alt="indie-logo">
                             </picture>
                         </a>
@@ -238,15 +247,15 @@
                     <div class="genre__music" id="chill">
                         <a href="">
                             <h5 class="genre__music-title"> Chill </h5>
-                            <picture>
+                            <picture id="cardImg"> 
                                 <img src="./assets/playlist/14.jpeg" alt="chill-logo">
                             </picture>
                         </a>
                     </div>
                     <div class="genre__music" id="latinas">
-                        <a href="">
+                        <a href="" >
                             <h5 class="genre__music-title"> Latina </h5>
-                            <picture>
+                            <picture id="cardImg">
                                 <img src="./assets/playlist/15.jpeg" alt="latina-logo">
                             </picture>
                         </a>
@@ -254,7 +263,7 @@
                 </span>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="logo-search">
             <span class="footer__desc">
                 <h5>Testar o Premium de graça</h5>
                 <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
@@ -266,6 +275,6 @@
             </span>
         </footer>
     </div>
-    <script src="script.js"></script>
+
 </body>
 </html>
