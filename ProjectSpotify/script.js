@@ -4,11 +4,7 @@ const playlistItems = document.getElementById("playlists-items")
 
 function reqDeApi(input){
     const url = `http://localhost:3000/artists?name_like=${input}`
-    try{
-        fetch(url).then((res) => res.json()).then(data => mostrarResultados(data))
-    } catch(e){
-        console.log(e)
-    }
+    fetch(url).then((res) => res.json()).then(data => mostrarResultados(data))
 }      
 
 function mostrarResultados(data){
